@@ -1,5 +1,5 @@
-import { Stack, Button, IconButton } from "@mui/material";
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+import { Stack, Button, IconButton, ButtonGroup } from "@mui/material";
+import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
 
 export const MuiButton = () => {
   return (
@@ -45,9 +45,16 @@ export const MuiButton = () => {
         <Button variant="contained" size="large" disableRipple disableElevation>
           large
         </Button>
-        <IconButton color="primary" >
-            <ThreeDRotation />
+        <IconButton color="primary">
+          <ThreeDRotation />
         </IconButton>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup variant="outlined" orientation="vertical" size="small" color="secondary" aria-label="alignment button group">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
